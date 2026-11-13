@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension point="org.eclipse.ui.views">
+    <category id="se.yrell.ai.category" name="Yrell AI Assistant"/>
+    <view id="se.yrell.ai.view" name="Yrell AI Task Exporter" category="se.yrell.ai.category" class="se.yrell.ai.ui.AIView" restorable="true" allowMultiple="false"/>
+  </extension>
+  <extension point="org.eclipse.ui.preferencePages">
+    <page id="se.yrell.ai.preferences" name="Yrell AI Assistant" class="se.yrell.ai.ui.ExportPreferencesPage"/>
+    <page id="se.yrell.ai.context.preferences" name="Context &amp; Export" category="se.yrell.ai.preferences" class="se.yrell.ai.ui.ContextPreferencesPage"/>
+    <page id="se.yrell.ai.templates.preferences" name="Prompt Templates" category="se.yrell.ai.preferences" class="se.yrell.ai.ui.PromptPreferencesPage"/>
+  </extension>
+  <extension point="com.bmc.arsys.studio.commonui.genericaction">
+    <genericActionProvider class="se.yrell.ai.bmc.AIObjectListActionProvider"/>
+  </extension>
+</plugin>

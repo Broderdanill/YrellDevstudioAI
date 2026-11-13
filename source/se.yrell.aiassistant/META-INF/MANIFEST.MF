@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Yrell AI Task Exporter
+Bundle-SymbolicName: se.yrell.aiassistant;singleton:=true
+Bundle-Version: 0.2.0
+Bundle-Vendor: Yrell
+Bundle-Activator: se.yrell.ai.AIPlugin
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.ui,org.eclipse.jface,org.eclipse.swt,org.eclipse.equinox.security,com.bmc.arsys.studio.model,com.bmc.arsys.studio.ui,com.bmc.arsys.studio.commonui
+Import-Package: org.osgi.framework;version="1.8.0"
+Automatic-Module-Name: se.yrell.aiassistant
